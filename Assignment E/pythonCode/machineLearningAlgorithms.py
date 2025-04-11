@@ -1,16 +1,9 @@
-import csv
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.feature_selection import SelectFromModel
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LogisticRegression
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -18,7 +11,6 @@ import torch.utils.data as data_utils
 from sklearn.cluster import KMeans
 from dataCleaning import *
 from sklearn.metrics import silhouette_score, silhouette_samples
-from sklearn.utils.class_weight import compute_class_weight
 import matplotlib.cm as cm
 from scipy.cluster.hierarchy import dendrogram, linkage
 from sklearn.cluster import AgglomerativeClustering
